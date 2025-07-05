@@ -1,7 +1,5 @@
 # adaptive-rag-system
 
-# Intelligent Document RAG System
-
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![Streamlit](https://img.shields.io/badge/streamlit-1.28.0-red.svg)](https://streamlit.io/)
 [![LangChain](https://img.shields.io/badge/langchain-0.2.16-green.svg)](https://python.langchain.com/)
@@ -71,13 +69,11 @@ Creating a virtual environment ensures package compatibility and prevents confli
 
 ```bash
 # Create virtual environment
-python -m venv venv
+conda create -p venv python=3.11 -y
 
 # Activate virtual environment
 # On Windows:
-venv\Scripts\activate
-# On macOS/Linux:
-source venv/bin/activate
+conda activate venv/
 ```
 
 ### Step 3: Install Dependencies
@@ -85,12 +81,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-If you encounter dependency conflicts, try this approach:
-```bash
-# Clean installation method
-pip uninstall -y langchain langchain-community langchain-core langsmith google-generativeai
-pip install -r requirements.txt
-```
 
 ### Step 4: Get Google AI Studio API Key
 
